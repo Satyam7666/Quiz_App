@@ -1,0 +1,10 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
+  /* Adjust the appearance of the buttons as needed */
+  button.mat-icon-button {
+    min-width: 0; /* Ensure the icon button doesn't take up too much space */
+  }

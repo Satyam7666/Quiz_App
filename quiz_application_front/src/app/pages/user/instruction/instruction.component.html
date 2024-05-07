@@ -1,0 +1,57 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <mat-card-header>
+                        <!-- heading -->
+                        <mat-card-title>
+                            Read the instruction carefully
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            One step more to go
+                        </mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content class="ml20 mt10">
+                        <!-- containt -->
+                      <h1>  {{ quiz.title}}</h1>
+                      <p>  {{ quiz.description}}</p>
+
+                      <mat-divider></mat-divider>
+                      <br>
+                      <h1>Important Instruction</h1>
+
+                      <ul>
+                        <li>This quiz is for practice perpose.</li>
+                        <li>You have to submit the quiz with in <b> {{ quiz.numberOfquestion*2}} Minutes </b></li>
+                        <li>You can aattempt the quiz any number of time</li>
+                        <li>There are <b> {{ quiz.numberOfquestion}}  </b> question in quiz.</li>
+                        <li>Each question carries {{quiz.maxMark/quiz.numberOfquestion}} marks. No negative marking for wrong ones </li>
+                        <li>All question is of MCQ time</li>
+                      </ul>
+                      <mat-divider></mat-divider>
+                      <br>
+                      <h1>Attempting Quiz</h1>
+                      <ul>
+
+                        <li> Click <b>Start Quiz</b> button to start the quiz.</li>
+                        <li>The time will start the moment you click the sart test button.</li>
+                        <li>You can not resume this quiz,if interruoted due to any reason.</li>
+                        <li> Scroll down to move next question.</li>
+                        <li>Click the submit quiz buttonon completion of the quiz.</li>
+                        <li>Report of the test is automatically generated in the form of pdf copy</li>
+                      </ul>
+
+                    </mat-card-content>
+                    <mat-card-actions class="text-center" style="margin-left: 44%;">
+                        
+                            <button (click)="startQuiz()"  mat-raised-button color="primary">Start quiz</button>
+                        
+                            <!-- action -->
+                            
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
